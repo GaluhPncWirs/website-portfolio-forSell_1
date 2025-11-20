@@ -69,9 +69,9 @@ export default function MyWebsitePortfolio() {
               expedita tempora.
             </p>
           </div>
-          <div className="max-[640px]:w-full sm:w-full lg:basis-1/2">
+          <div className="w-full lg:basis-1/2">
             <h1 className="text-2xl font-semibold mb-7">My Skills</h1>
-            <ul className="flex justify-evenly font-semibold text-lg max-[640px]:text-base">
+            <ul className="flex justify-evenly font-semibold text-base sm:text-lg">
               <li className="flex flex-col items-center justify-center">
                 <img
                   src="/img/research.png"

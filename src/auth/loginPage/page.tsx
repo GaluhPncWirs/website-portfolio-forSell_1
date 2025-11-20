@@ -10,6 +10,7 @@ import {
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
 import { Button } from "../../components/ui/button";
+import { toast } from "sonner";
 // import { useState } from "react";
 
 export default function LoginPage() {
@@ -25,9 +26,14 @@ export default function LoginPage() {
       emailUser === "adamJobs123@gmail.com" &&
       passwordUser === "adamjob123"
     ) {
+      toast("Login Success", {
+        description: "Welcome to dashboard edit portfolio",
+      });
       navigate("/dashboard/editPortfolio");
     } else {
-      console.log("email dan password salah");
+      toast("Login Failed", {
+        description: "Wrong Email and Password, input again !",
+      });
     }
   }
 
@@ -36,9 +42,7 @@ export default function LoginPage() {
       <Card className="w-md shadow-lg shadow-slate-600">
         <CardHeader>
           <CardTitle>Login</CardTitle>
-          <CardDescription>
-            Masuk akun untuk mengedit portfolio anda
-          </CardDescription>
+          <CardDescription>Log in to edit your portfolio</CardDescription>
         </CardHeader>
         <form onSubmit={(e) => handleLogin(e)}>
           <CardContent>

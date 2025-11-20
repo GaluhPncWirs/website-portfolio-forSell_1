@@ -5,6 +5,7 @@ import MyWebsitePortfolio from "./MyWebsitePortfolio.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./auth/loginPage/page.tsx";
 import DashboardEditPortfolio from "./dashboard/editPortfolio/page.tsx";
+import { Toaster } from "./components/ui/sonner.tsx";
 
 const router = createBrowserRouter([
   {
@@ -24,5 +25,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <Toaster richColors />
   </StrictMode>
 );
