@@ -120,7 +120,7 @@ export default function MyWebsitePortfolio() {
                 alt="Project"
                 width={500}
                 height={500}
-                className="w-full rounded-t-md md:rounded-r-full md:shadow-lg md:shadow-slate-700"
+                className="w-full rounded-t-md md:rounded-r-full md:shadow-lg md:shadow-slate-700 transition-all hover:scale-105 hover:opacity-80"
                 loading="lazy"
               />
             </Link>
@@ -139,7 +139,7 @@ export default function MyWebsitePortfolio() {
                 alt="Project"
                 width={500}
                 height={500}
-                className="w-full rounded-t-md md:rounded-l-full md:shadow-lg md:shadow-slate-700"
+                className="w-full rounded-t-md md:rounded-l-full md:shadow-lg md:shadow-slate-700 transition-all hover:scale-105 hover:opacity-80"
                 loading="lazy"
               />
             </Link>
@@ -157,7 +157,7 @@ export default function MyWebsitePortfolio() {
                 alt="Project"
                 width={500}
                 height={500}
-                className="w-full rounded-t-md md:rounded-r-full md:shadow-lg md:shadow-slate-700"
+                className="w-full rounded-t-md md:rounded-r-full md:shadow-lg md:shadow-slate-700 transition-all hover:scale-105 hover:opacity-80"
                 loading="lazy"
               />
             </Link>

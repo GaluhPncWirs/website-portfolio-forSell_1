@@ -16,15 +16,27 @@ export default function DashboardEditPortfolio() {
       <div className="bg-slate-700 w-full pb-5 pt-10">
         <ul className="flex justify-evenly items-center h-full">
           <div className="h-1 bg-slate-100 w-1/2 rounded-md absolute" />
-          <li className="w-8 h-8 rounded-full bg-slate-400 flex items-center justify-center text-lg font-bold z-20">
+          <li
+            className={`w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold z-20 ${
+              nextEdit.editAbout ? `bg-slate-400` : `bg-slate-100`
+            }`}
+          >
             <h1 className="text-slate-100 absolute top-2">About</h1>
             <span>1</span>
           </li>
-          <li className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-lg font-bold z-20">
+          <li
+            className={`w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold z-20 ${
+              nextEdit.editProject ? `bg-slate-400` : `bg-slate-100`
+            }`}
+          >
             <h1 className="text-slate-100 absolute top-2">Project</h1>
             <span>2</span>
           </li>
-          <li className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-lg font-bold z-20">
+          <li
+            className={`w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold z-20 ${
+              nextEdit.editContact ? `bg-slate-400` : `bg-slate-100`
+            }`}
+          >
             <h1 className="text-slate-100 absolute top-2">Contact</h1>
             <span>3</span>
           </li>

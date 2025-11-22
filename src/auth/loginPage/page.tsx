@@ -11,7 +11,6 @@ import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
 import { Button } from "../../components/ui/button";
 import { toast } from "sonner";
-// import { useState } from "react";
 
 export default function LoginPage() {
   // const [isSuccess, setIsSuccess] = useState(false)
@@ -19,8 +18,9 @@ export default function LoginPage() {
 
   function handleLogin(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const emailUser = event.target.email.value;
-    const passwordUser = event.target.password.value;
+    const inputForm = event.target as HTMLFormElement;
+    const emailUser = inputForm.email.value;
+    const passwordUser = inputForm.password.value;
 
     if (
       emailUser === "adamJobs123@gmail.com" &&
